@@ -1,0 +1,13 @@
+import static javax.swing.JOptionPane.*;
+public class Serova {
+    public static void main(String[] args) {
+        int number, thousands;
+        number=Integer.parseInt(
+                showInputDialog("Enter an integer:")
+        );
+        thousands=(number/1000)%10;
+        String txt="This number has "+thousands+" thousands";
+        showMessageDialog(null,txt);
+
+    }
+}
