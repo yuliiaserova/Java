@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        var scanner = new Scanner(System.in);
+
+        while (true) {
+        System.out.println("What is a weight of a parcel?");
+        var weight = scanner.nextDouble();
+
+
+        System.out.println("What is a price for one kg?");
+        var hryvna = scanner.nextDouble();
+
+        if (weight == 0)
+            break;
+        
+        var result = weight * hryvna;
+        System.out.println("Result:= " + result);
+}
+}
