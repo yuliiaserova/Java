@@ -1,0 +1,17 @@
+import java.util.Scanner;
+import static javax.swing.JOptionPane.*;
+public class serova {
+public static void main(String [] args) {
+int now=2025,age,year;
+String num,msg="You are: ";
+num=showInputDialog(null, "Enter your year of birth: ",
+"Determine your age",
+QUESTION MESSAGE);
+year=Integer.parsInt(num);
+age=now-year;
+showMessageDialog(null,
+msg+age+" years old",
+"Age determined",
+ERROR_MESSAGE);
+}
+}
