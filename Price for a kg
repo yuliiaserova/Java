@@ -5,17 +5,25 @@ public class Main {
         var scanner = new Scanner(System.in);
 
         while (true) {
-        System.out.println("What is a weight of a parcel?");
-        var weight = scanner.nextDouble();
+         
+            System.out.println("What is the weight of the parcel?");
+            double weight = scanner.nextDouble();
 
+            if (weight == 0) {
+                System.out.println("Program ended.");
+                break;
+            }
 
-        System.out.println("What is a price for one kg?");
-        var hryvna = scanner.nextDouble();
+            System.out.println("What is the price for one kg?");
+            double pricePerKg = scanner.nextDouble();
 
-        if (weight == 0)
-            break;
+            // Рассчитываем стоимость
+            double result = weight * pricePerKg;
+
+            System.out.println("The total price is: " + result + " hryvnias.");
+        }
         
-        var result = weight * hryvna;
-        System.out.println("Result:= " + result);
+        scanner.close(); 
+    }
 }
-}
+
