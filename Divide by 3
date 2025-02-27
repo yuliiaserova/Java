@@ -1,14 +1,18 @@
 import static javax.swing.JOptionPane.*;
-public class Serova {
+
+class Serova {
     public static void main(String[] args) {
         int number, reminder;
-        number=Integer.parseInt(
+        
+        number = Integer.parseInt(
                 showInputDialog("Enter an integer:")
         );
-        reminder=number%3;
-        String txt="You entered ";
-        txt+="number"+(reminder==0? " divides by 3!": "doesn't divide by 3!");
-        showMessageDialog(null,txt);
-
+        reminder = number % 3;
+  
+        String txt = "You entered number " + number + ", which ";
+        txt += (reminder == 0 ? "divides by 3!" : "doesn't divide by 3!");
+        
+        showMessageDialog(null, txt);
     }
 }
+
